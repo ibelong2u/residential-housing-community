@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="tailwind.css" rel="stylesheet">
+  <title>Tierra Del Rey</title>
+</head>
+<body>
+
+
+<!-- old buttons-->
+
+    <!--div class="mb-5 md:my-1 text-2xl md:text-right font-medium md:font-bold md:block md:mx-auto">
+      <a class="bg-gray-700 md:bg-transparent block md:inline w-full p-5 md:p-0 rounded-lg text-center md:text-left text-white md:text-gray-700 tracking-wider md:tracking-normal" href="tel:+17131234567"><span class="mr-3 md:hidden">&phone; </span>Call: (713) 123-4567</a>
+    </div>
+
+    <div class="text-2xl font-semibold text-center md:text-right md:block md:mx-auto">
+      <a class="bg-gray-700 md:bg-transparent block md:inline w-full p-5 md:p-0 rounded-lg text-center md:text-left text-white md:text-gray-700" href="mailto:sales@tierradelrey.com"><span class="md:hidden">&#128231;</span> sales@tierradelrey.com</a>
+    </div-->
+
+<!-- end old button -->
+
+
+<!--
+
+const colors = require('tailwindcss/colors')
+
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+          brown: {
+            lightest: '#e8dcd4' ,
+            light: '#D3B49F',
+            DEFAULT: '#D08647',
+            dark: '#AF7D7E',
+            darkest: '#2A1305',
+          },
+          'green': '#185412',
+          'green-light': '#55C149',
+          red: '#A35D5D',
+      },
+    },
+  },
+  variants: {},
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/forms'),
+
+  ],
+}
+
+
+-->
+
+
+<!-- https://play.tailwindcss.com/fx86il6tYj -->
+
+<!-- with listing: https://play.tailwindcss.com/xlGm3sI6IG -->
+
+
+<div class="grid grid-cols-3 max-w-screen-2xl mx-auto 2xl:rounded-md 2xl:shadow-2xl">
+  <!-- max-w-screen-2xl -->
+  <div class="col-span-3 md:col-span-2 p-5 order-1">
+    <!-- bg-gray-100 sticky md:relative -top-40 md:top-auto -->
+    <a href="https://www.tierradelreymhc.com/">
+      <img src="logo.png" alt="Tierra del Rey" class="w-3/5 md:w-auto md:h-40 mx-auto md:mx-10" style="filter:brightness(0.9);" /> <!--https://i.imgur.com/DnZh4dE.png https://i.imgur.com/bXZUxgh.jpg-->
+    </a>
+  </div>
+
+  <div class="col-span-3 md:col-span-1 flex flex-col justify-end order-3 md:order-2 p-5">
+    <a class="bg-gray-700 md:bg-transparent md:max-w-sm mb-5 md:mb-3 text-white md:text-black p-5 md:p-0 text-2xl md:text-3xl font-medium md:font-normal tracking-wider md:tracking-normal rounded-lg text-center" href="tel:+17131234567"><span class="mr-3 md:hidden">&phone; </span><span class="md:hidden xl:inline">Call: </span>(713) 123-4567</a>
+
+    <a class="bg-gray-700 md:bg-transparent md:max-w-sm -mb-1 md:mb-2 text-white md:text-black p-5 md:p-0 text-2xl md:text-xl lg:text-2xl lg:tracking-wide font-medium md:font-normal rounded-lg text-center" href="mailto:sales@tierradelreymhc.com"><span class="md:hidden">&#128231; </span> sales@tierradelrey.com</a>
+  </div>
+
+  <div class="col-span-3 md:col-span-2 flex flex-col justify-end px-5 md:px-10 py-5 order-2 md:order-3 md:border-t bg-cover bg-center bg-off" style="background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0)), url(banner.jpg);">
+    <!-- background only on md -->
+    <h1 class="hidden md:block text-5xl text-center md:text-left md:text-white font-medium font-serif pb-3">Tierra del Rey</h1>
+    <h2 class="hidden text-xl md:text-xl text-center md:text-left text-white font-sans">Manufactured Home Living Community</h2>
+    <h2 class="text-xl text-center md:text-left md:text-white font-sans font-medium pb-1">12750 Aldine Westfield Rd, Houston, TX 77039</h2>
+    <h2 class="text-lg text-center md:text-left md:text-white font-medium tracking-wider">From $55,000 | 1,050 – 1,215 sq. ft.</h4>
+  </div>
+
+  <div class="bg-gray-100 col-span-3 md:col-span-1 border-l-4 py-1 md:py-10 px-4 md:px-8 order-4 md:order-5 md:border-t">
+    <h2 onclick="document.getElementsByTagName('form')[0].style.visibility='visible'; document.getElementsByTagName('form')[0].scrollIntoView({behavior:'smooth',block:'center'});" class="bg-gray-700 md:bg-transparent text-2xl md:text-2xl font-medium block p-5 md:p-0 md:pb-5 rounded-lg text-center text-white md:text-gray-700 tracking-wider md:tracking-normal cursor-pointer md:cursor-auto font-sans md:font-serif md:text-left"><span class="mr-2 md:hidden">&#128198; </span> Request Information</h2>
+    <div class="bg-cover md:bg-none mt-7 md:mt-0" style="background-image:url(banner.jpg)">
+      <form class="invisible md:visible bg-gray-100 pb-5 md:pb-0" method="POST" action="https://formspree.io/sales@tierradelrey.com">
+        <span class="block w-4/5 md:w-full mx-auto md:mx-0 pb-2 md:pb-0">Please submit your contact details below or give us a call on <a class="whitespace-nowrap" href="tel:+17131234567">713-123-4567</a>.</span>
+        <input class="block w-4/5 md:w-full md:max-w-sm mx-auto md:mx-0 my-4 py-2 px-3 border" type="text" name="name" placeholder="Name" />
+        <input class="block w-4/5 md:w-full md:max-w-sm mx-auto md:mx-0 my-4 py-2 px-3 border" type="email" name="email" placeholder="Email" />
+        <input class="block w-4/5 md:w-full md:max-w-sm mx-auto md:mx-0 my-4 py-2 px-3 border" type="tel" name="phone" placeholder="Phone" />
+        <textarea class="block w-4/5 md:w-full md:max-w-sm mx-auto md:mx-0 my-4 py-2 px-3 border" name="message" placeholder="Message"></textarea>
+        <div class="block md:max-w-sm"><button class="block mx-auto mt-5 py-3 px-5 uppercase font-medium border rounded bg-gray-700 hover:bg-black text-white border" type="submit" onclick="alert('howdy')">Submit</button></div>
+      </form>
+    </div>
+  </div>
+
+  <div class="col-span-3 md:col-span-2 order-5 md:order-6 p-10">
+    <h3 class="text-3xl py-4 font-serif">Community Overview</h3>
+    <p class="py-3">Tierra del Rey is a new, 142-lot manufactured housing community located in Houston.</p>
+    <p class="py-3">The community features two private, gated entrances, street lighting and generous common areas. The common areas include a community office, children's playground, picnic area and visitor parking. Additionally, each lot will have THREE dedicated parking spaces.</p>
+    <p class="py-3">The community is partnering with the premiere home builders of Texas – Clayton Homes, Champions Homes, Oak Creek Homes, and Jessup Housing. Floor plans will range from 1,050 square feet to 1,215 square feet and two bedrooms, two bathrooms to three bedrooms, two bathrooms. Additionally, each home will include premium skirting, a private deck, and a private yard.</p>
+    <p class="py-3">The community is centrally located, approximately 10 miles from downtown Houston. It enjoys easy access to major thoroughfares, including I-45, I-69, I-610 and Beltway 8.</p>
+    <p class="py-3">With starting prices of $55,000, you won't want to miss the opportunity to live in this new community.</p>
+  </div>
+
+  <div class="col-span-3 md:col-span-1 border-l pb-10 px-8 bg-gray-100 order-6 md:order-7">
+    <h2 class="text-2xl font-serif pt-10 pb-5 border-t">Community Information</h2>
+    <p>Call for information regarding hours<br />Sunday &ndash; Saturday<br /></p>
+    <h3 class="text-lg font-semibold pt-2">Tierra del Rey Sales</h3>
+    <p>
+      <a href="mailto:sales@tierradelrey.com">sales@tierradelrey.com</a><br />
+      Phone. <a href="tel:+17131234567">(713) 123-4567</a>
+    </p>
+
+    <h2 class="font-serif text-2xl pt-10 pb-7 mt-10 border-t">School Districts Near Home</h2>
+    <table class="table-auto w-full border-collapse border-2 bg-white">
+      <thead class="bg-gray-200">
+        <tr class="border-b-2">
+          <th class="text-left py-1 px-2">Public School Name</th>
+          <th class="text-center py-1 px-2">Year</th>
+          <th class="text-right py-1 px-2">Distance</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-b">
+          <td class="py-1 px-2">Stephens Elementary School</td>
+          <td class="py-1 px-2 text-center">K-5</td>
+          <td class="py-1 px-2 text-right">0.7 miles</td>
+        </tr>
+        <tr class="border-b">
+          <td class="py-1 px-2">Steve Mead Middle School</td>
+          <td class="py-1 px-2 text-center">6-8</td>
+          <td class="py-1 px-2 text-right">2.1 miles</td>
+        </tr>
+        <tr class="border-b">
+          <td class="py-1 px-2">MacArthur Ninth Grade School</td>
+          <td class="py-1 px-2 text-center">9</td>
+          <td class="py-1 px-2 text-right">2.1 miles</td>
+        </tr>
+        <tr class="border-b">
+          <td class="py-1 px-2">MacArthur Senior High School</td>
+          <td class="py-1 px-2 text-center">10-12</td>
+          <td class="py-1 px-2 text-right">2.1 miles</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="hidden col-span-3 p-10 border-t-2 order-8 h-96 bg-cover bg-center shadow-inner" style="background-image:url(banner.jpg)"></div>
+
+  <div class="col-span-3 py-10 border-t order-9 text-center leading-7 bg-gray-100">
+    Tierra del Rey &copy; 2021. All Right Reserved.<br />
+    <a href="tel:+17131234567">+1 (713) 123-4567</a> | <a href="mailto:sales@tierradelrey.com">sales@tierradelrey.com</a><br />
+    12750 Aldine Westfield Rd, Houston, TX 77039<br />
+  </div>
+</div>
+
+  
+</body>
+</html>
